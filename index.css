@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #070913;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #070913;
+    color: #f1f5f9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* CodingOTT Background Grid */
+.bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Glassmorphic Tech Cards */
+.ott-card {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(10, 15, 29, 0.85) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ott-card:hover {
+  border-color: rgba(168, 85, 247, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.25);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   Custom Futuristic Tech Scrollbar (Chrome, Safari, Edge & Firefox)
+   ========================================================================== */
+
+/* Firefox Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.45) #05070f;
+}
+
+/* WebKit (Chrome, Edge, Safari, Brave) */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #05070f;
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(99, 102, 241, 0.5) 0%,
+    rgba(168, 85, 247, 0.5) 50%,
+    rgba(236, 72, 153, 0.5) 100%
+  );
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s ease-in-out;
+}
+
+/* Thumb Hover State (Glowing Neon Accent) */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(99, 102, 241, 0.9) 0%,
+    rgba(168, 85, 247, 0.9) 50%,
+    rgba(236, 72, 153, 0.9) 100%
+  );
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+}
+
+/* Thumb Active / Dragging State */
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(
+    180deg,
+    #6366f1 0%,
+    #a855f7 50%,
+    #ec4899 100%
+  );
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.8);
+}
+
+/* Scrollbar Corner (for horizontal + vertical scroll intersection) */
+::-webkit-scrollbar-corner {
+  background: #05070f;
+}
