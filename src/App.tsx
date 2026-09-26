@@ -33,7 +33,7 @@ export const App: React.FC = () => {
         </main>
         <Footer />
         {/* Floating / Sticky WhatsApp Button */}
-      <WhatsAppButton phoneNumber="9073015730" />
+      <WhatsAppButton phoneNumber="+919876543210" />
       </div>
     </ConfigProvider>
   );
