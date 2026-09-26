@@ -7,6 +7,7 @@ import { AboutSection } from './sections/About';
 import { PortfolioSection } from './sections/Portfolio';
 import { ResumeSection } from './sections/Resume';
 import { ContactSection } from './sections/Contact';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 export const App: React.FC = () => {
   return (
@@ -31,6 +32,8 @@ export const App: React.FC = () => {
           <ContactSection />
         </main>
         <Footer />
+        {/* Floating / Sticky WhatsApp Button */}
+      <WhatsAppButton phoneNumber="9073015730" />
       </div>
     </ConfigProvider>
   );
