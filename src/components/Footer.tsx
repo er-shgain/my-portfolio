@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   GithubOutlined,
   LinkedinOutlined,
   TwitterOutlined,
   CodeOutlined,
   ArrowUpOutlined,
-  CopyOutlined,
-  CheckOutlined,
 } from '@ant-design/icons';
 import { personalInfo, socialLinks } from '../data/portfolioData';
 
@@ -25,13 +23,6 @@ const navLinks = [
 ];
 
 export const Footer: React.FC = () => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
