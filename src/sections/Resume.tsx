@@ -67,7 +67,7 @@ export const ResumeSection: React.FC = () => {
                   >
                     {/* Glowing Marker */}
                     <span
-                      className={`absolute -left-[31px] sm:-left-[39px] top-2 w-4 h-4 rounded-full border-2 ${
+                      className={`absolute -left-7.75 sm:-left-9.75 top-2 w-4 h-4 rounded-full border-2 ${
                         isActive
                           ? 'border-indigo-400 bg-indigo-600 shadow-lg shadow-indigo-500/60'
                           : 'border-slate-700 bg-slate-900'
@@ -173,7 +173,7 @@ export const ResumeSection: React.FC = () => {
                   className="relative group flex-1 flex flex-col"
                 >
                   {/* Purple Marker */}
-                  <span className="absolute -left-[31px] sm:-left-[39px] top-2 w-4 h-4 rounded-full border-2 border-purple-500 bg-purple-950" />
+                  <span className="absolute -left-7.75 sm:-left-9.75 top-2 w-4 h-4 rounded-full border-2 border-purple-500 bg-purple-950" />
 
                   {/* Education / Certificate Card */}
                   <div className="p-6 sm:p-8 rounded-2xl bg-[#0b0e1b] border border-white/10 hover:border-purple-500/40 transition-all duration-300 shadow-xl flex-1 flex flex-col justify-between">

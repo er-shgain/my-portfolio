@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
           {/* Brand & Active Status */}
           <div className="flex items-center gap-3">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-sm shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+              <div className="w-8 h-8 rounded-lg bg-linear-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-sm shadow-indigo-500/20 group-hover:scale-105 transition-transform">
                 <CodeOutlined className="text-sm" />
               </div>
               <span className="text-base font-bold text-white tracking-tight">

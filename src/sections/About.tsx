@@ -6,9 +6,7 @@ import {
   DatabaseOutlined,
   CheckCircleFilled,
   SafetyCertificateOutlined,
-  ThunderboltFilled,
 } from '@ant-design/icons';
-import { personalInfo } from '../data/portfolioData';
 
 interface Skill {
   name: string;
@@ -125,11 +123,11 @@ export const AboutSection: React.FC = () => {
 
             {/* Quick Metrics Pillar */}
             <div className="lg:w-72 shrink-0 grid grid-cols-2 lg:grid-cols-1 gap-3 p-4 rounded-2xl bg-black/40 border border-white/5">
-              <div className="p-3 rounded-xl bg-white/[0.02]">
+              <div className="p-3 rounded-xl bg-white/2">
                 <div className="text-2xl font-black text-white">2.5+ Yrs</div>
                 <div className="text-[11px] font-mono text-indigo-400 uppercase">Industry Exp</div>
               </div>
-              <div className="p-3 rounded-xl bg-white/[0.02]">
+              <div className="p-3 rounded-xl bg-white/2">
                 <div className="text-2xl font-black text-white">Techsunset</div>
                 <div className="text-[11px] font-mono text-emerald-400 uppercase">Active Role</div>
               </div>
@@ -152,7 +150,7 @@ export const AboutSection: React.FC = () => {
                 {/* Category Header */}
                 <div className="flex items-center gap-3.5 mb-7">
                   <div
-                    className={`w-12 h-12 rounded-xl bg-gradient-to-tr ${group.color} flex items-center justify-center text-white shadow-lg shrink-0 group-hover:scale-105 transition-transform`}
+                    className={`w-12 h-12 rounded-xl bg-linear-to-tr ${group.color} flex items-center justify-center text-white shadow-lg shrink-0 group-hover:scale-105 transition-transform`}
                   >
                     {group.icon}
                   </div>
@@ -183,7 +181,7 @@ export const AboutSection: React.FC = () => {
                             ease: [0.16, 1, 0.3, 1],
                             delay: groupIdx * 0.15 + skillIdx * 0.08,
                           }}
-                          className="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-sm shadow-indigo-500/50"
+                          className="h-full bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-sm shadow-indigo-500/50"
                         />
                       </div>
                     </div>

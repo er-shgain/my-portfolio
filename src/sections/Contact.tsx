@@ -57,7 +57,7 @@ export const ContactSection: React.FC = () => {
       className="py-24 px-4 sm:px-6 bg-[#070913] relative overflow-hidden border-t border-white/5"
     >
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-indigo-600/10 via-purple-600/10 to-pink-600/5 blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-linear-to-tr from-indigo-600/10 via-purple-600/10 to-pink-600/5 blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
@@ -276,7 +276,7 @@ export const ContactSection: React.FC = () => {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full mt-2 py-3.5 rounded-xl text-sm font-bold uppercase tracking-wider text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:opacity-95 shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 disabled:opacity-50 cursor-pointer"
+                    className="w-full mt-2 py-3.5 rounded-xl text-sm font-bold uppercase tracking-wider text-white bg-linear-to-r from-indigo-600 via-purple-600 to-pink-600 hover:opacity-95 shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 disabled:opacity-50 cursor-pointer"
                   >
                     {loading ? (
                       <span>Transmitting...</span>

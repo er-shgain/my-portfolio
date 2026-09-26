@@ -52,7 +52,7 @@ export const PortfolioSection: React.FC = () => {
                   onClick={() => setFilter(tab.value)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-mono font-semibold transition-all duration-200 flex items-center gap-1.5 ${
                     isActive
-                      ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-sm shadow-indigo-600/30'
+                      ? 'bg-linear-to-r from-indigo-600 to-purple-600 text-white shadow-sm shadow-indigo-600/30'
                       : 'text-gray-400 hover:text-gray-200 hover:bg-white/5'
                   }`}
                 >

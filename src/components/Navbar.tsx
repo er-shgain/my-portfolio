@@ -36,7 +36,7 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Brand / Logo */}
         <a href="#home" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+          <div className="w-9 h-9 rounded-xl bg-linear-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
             <CodeOutlined className="text-lg" />
           </div>
           <span className="text-xl font-extrabold tracking-tight text-white">
@@ -45,7 +45,7 @@ export const Navbar: React.FC = () => {
         </a>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center space-x-1 border border-white/10 bg-white/[0.03] px-4 py-1.5 rounded-full">
+        <nav className="hidden md:flex items-center space-x-1 border border-white/10 bg-white/3 px-4 py-1.5 rounded-full">
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -61,7 +61,7 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center">
           <a
             href="#contact"
-            className="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 shadow-md shadow-indigo-500/20 transition-all"
+            className="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 shadow-md shadow-indigo-500/20 transition-all"
           >
             Hire Me
           </a>

@@ -7,17 +7,19 @@ import {
   CopyOutlined,
   CheckOutlined,
   CodeOutlined,
-  GithubOutlined,
-  LinkedinOutlined,
-  TwitterOutlined,
+  //GithubOutlined,
+  //LinkedinOutlined,
+  //TwitterOutlined,
 } from '@ant-design/icons';
-import { personalInfo, socialLinks } from '../data/portfolioData';
+import { personalInfo } from '../data/portfolioData';
 
+/*
 const iconMap: Record<string, React.ReactNode> = {
   github: <GithubOutlined />,
   linkedin: <LinkedinOutlined />,
   twitter: <TwitterOutlined />,
 };
+*/
 
 export const HomeSection: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -40,10 +42,10 @@ export const HomeSection: React.FC = () => {
       <div className="absolute bottom-1/4 right-1/6 w-96 h-96 bg-purple-600/15 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-        
+
         {/* Left Column: Dossier, Headlines & CTAs */}
         <div className="lg:col-span-7 flex flex-col items-start">
-          
+
           {/* Status Badges */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -122,7 +124,7 @@ export const HomeSection: React.FC = () => {
           >
             <a
               href="#portfolio"
-              className="px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:opacity-95 shadow-lg shadow-indigo-600/30 flex items-center gap-2 transition-all transform hover:-translate-y-0.5"
+              className="px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-white bg-linear-to-r from-indigo-600 via-purple-600 to-pink-600 hover:opacity-95 shadow-lg shadow-indigo-600/30 flex items-center gap-2 transition-all transform hover:-translate-y-0.5"
             >
               <span>Explore Projects</span>
               <ArrowRightOutlined />

@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode } from 'react';
 import { ConfigProvider, theme } from 'antd';
 import App from './App.tsx';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
     <ConfigProvider
       theme={{
         algorithm: theme.darkAlgorithm,
@@ -18,5 +18,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     >
       <App />
     </ConfigProvider>
-  </React.StrictMode>
+  </StrictMode>
 );
