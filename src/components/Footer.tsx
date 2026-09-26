@@ -74,20 +74,8 @@ export const Footer: React.FC = () => {
             ))}
           </nav>
 
-          {/* Socials & Quick Email */}
+          {/* Socials */}
           <div className="flex items-center gap-2">
-            <button
-              onClick={handleCopyEmail}
-              className="px-3 py-1.5 rounded-lg bg-slate-900 border border-white/5 hover:border-indigo-500/30 text-xs text-slate-300 hover:text-white flex items-center gap-1.5 transition-all cursor-pointer"
-              title="Copy Email"
-            >
-              <span>{personalInfo.email}</span>
-              {copied ? (
-                <CheckOutlined className="text-emerald-400 text-[10px]" />
-              ) : (
-                <CopyOutlined className="text-slate-500 text-[10px]" />
-              )}
-            </button>
 
             {socialLinks.map((item) => (
               <a

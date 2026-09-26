@@ -5,8 +5,8 @@ import { personalInfo } from '../data/portfolioData';
 
 const navItems = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
   { label: 'Projects', href: '#portfolio' },
+  { label: 'About', href: '#about' },
   { label: 'Experience', href: '#resume' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -27,11 +27,10 @@ export const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${scrolled
           ? 'bg-[#070913]/90 backdrop-blur-md border-indigo-500/10 py-3.5 shadow-lg shadow-black/40'
           : 'bg-transparent border-transparent py-5'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Brand / Logo */}
