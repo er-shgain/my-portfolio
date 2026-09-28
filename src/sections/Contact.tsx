@@ -3,7 +3,6 @@ import { message } from 'antd';
 import {
   MailOutlined,
   PhoneOutlined,
-  EnvironmentOutlined,
   SendOutlined,
   ThunderboltFilled,
   MessageOutlined,
