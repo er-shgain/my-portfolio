@@ -1,5 +1,6 @@
 import type { SkillItem, ProjectItem, ExperienceItem, EducationItem, SocialLink } from '../types';
 
+
 export const personalInfo = {
   name: 'Sahinur Gain',
   title: 'Full Stack Software Engineer',
@@ -40,7 +41,7 @@ export const experiences: ExperienceItem[] = [
     period: '08 April 2024 – Present',
     role: 'Full Stack Software Engineer (Remote)',
     company: 'Techsunset',
-    description: 'Techsunset (Bengaluru, Remote) | EMP: TS0542. Building scalable user interfaces and REST APIs with React, Next.js, Node.js, Express, and MongoDB. Managing AWS cloud services (EC2, S3, Lambda) and developed admin UI & backend APIs for proflowers.com.',
+    description: 'Techsunset (Bengaluru, Remote) Building scalable user interfaces and REST APIs with React, Next.js, Node.js, Express, and MongoDB. Managing AWS cloud services (EC2, S3, Lambda) and developed admin UI & backend APIs for proflowers.com.',
     skillsUsed: ['React', 'Next.js', 'Node.js', 'Express', 'MongoDB', 'AWS', 'Git', 'Jira'],
   },
 ];

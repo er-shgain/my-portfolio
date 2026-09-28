@@ -1,11 +1,11 @@
+import React from 'react';
 import { MessageCircle } from 'lucide-react';
+import { whatsappData } from './whatsapp-button.data';
 
-export const WhatsAppButton = () => {
-  const phoneNumber = '1234567890';
-  const message = 'Hi! I saw your portfolio and would like to connect.';
-
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
+export const WhatsAppButton: React.FC = () => {
+  const cleanPhone = whatsappData.phoneNumber.replace(/[^0-9]/g, '');
+  const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(
+    whatsappData.defaultMessage
   )}`;
 
   return (
@@ -38,7 +38,7 @@ export const WhatsAppButton = () => {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Chat on WhatsApp"
+          aria-label={whatsappData.ariaLabel}
           className="relative flex items-center justify-center font-medium shadow-2xl transition-all duration-300 bg-[#25D366] text-white hover:bg-[#20ba59] active:scale-95 animate-solid-breath
             /* Mobile layout */
             w-full py-3.5 rounded-none gap-2
@@ -46,9 +46,13 @@ export const WhatsAppButton = () => {
             md:w-auto md:px-5 md:py-3 md:rounded-full"
         >
           <MessageCircle className="w-6 h-6 shrink-0 fill-current" />
-          <span className="font-semibold tracking-wide">Chat on WhatsApp</span>
+          <span className="font-semibold tracking-wide">
+            {whatsappData.buttonText}
+          </span>
         </a>
       </div>
     </>
   );
 };
+
+export default WhatsAppButton;

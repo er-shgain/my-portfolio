@@ -1,13 +1,13 @@
 import React from 'react';
 import { ConfigProvider, theme } from 'antd';
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
-import { HomeSection } from './sections/Home';
-import { AboutSection } from './sections/About';
+import { Navbar } from './components/navbar/navbar.component';
+import { Footer } from './components/footer/footer.component';
+import { HomeSection } from './sections/home/home.section';
+import { AboutSection } from './sections/about/about.section';
 import { PortfolioSection } from './sections/Portfolio';
 import { ResumeSection } from './sections/Resume';
-import { ContactSection } from './sections/Contact';
-import { WhatsAppButton } from './components/WhatsAppButton';
+import { ContactSection } from './sections/contact/contact.section';
+import { WhatsAppButton } from './components/whatsapp-button/whatsapp-button.component';
 
 export const App: React.FC = () => {
   return (
@@ -33,7 +33,7 @@ export const App: React.FC = () => {
         </main>
         <Footer />
         {/* Floating / Sticky WhatsApp Button */}
-      <WhatsAppButton phoneNumber="+919876543210" />
+      <WhatsAppButton/>
       </div>
     </ConfigProvider>
   );

@@ -128,20 +128,6 @@ export const ContactSection: React.FC = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="p-4 rounded-xl bg-slate-900/60 border border-white/5 flex items-center gap-4">
-                    <div className="w-11 h-11 rounded-lg bg-pink-600/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-lg shrink-0">
-                      <EnvironmentOutlined />
-                    </div>
-                    <div>
-                      <div className="text-[11px] font-mono uppercase text-gray-500 tracking-wider">
-                        Location
-                      </div>
-                      <div className="text-sm font-semibold text-white">
-                        {personalInfo.location}
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -200,7 +186,7 @@ export const ContactSection: React.FC = () => {
 
                     <div>
                       <label className="block text-xs font-mono uppercase tracking-wider text-gray-300 mb-1.5">
-                        Phone Number
+                        WhatsApp
                       </label>
                       <input
                         type="tel"
@@ -216,44 +202,6 @@ export const ContactSection: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Email + Subject */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-mono uppercase tracking-wider text-gray-300 mb-1.5">
-                        Email Address <span className="text-indigo-400">*</span>
-                      </label>
-                      <input
-                        type="email"
-                        name="user_sender_email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        autoComplete="off"
-                        data-lpignore="true"
-                        data-1p-ignore="true"
-                        placeholder="recruiter@company.com"
-                        className="w-full h-11 px-4 rounded-xl bg-[#0d1222] border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-mono uppercase tracking-wider text-gray-300 mb-1.5">
-                        Subject
-                      </label>
-                      <input
-                        type="text"
-                        name="user_sender_subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        autoComplete="off"
-                        data-lpignore="true"
-                        data-1p-ignore="true"
-                        placeholder="Full Stack Opportunity"
-                        className="w-full h-11 px-4 rounded-xl bg-[#0d1222] border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
-                      />
-                    </div>
-                  </div>
-
                   {/* Message */}
                   <div>
                     <label className="block text-xs font-mono uppercase tracking-wider text-gray-300 mb-1.5">
@@ -261,7 +209,7 @@ export const ContactSection: React.FC = () => {
                     </label>
                     <textarea
                       name="user_sender_message"
-                      rows={4}
+                      rows={6}
                       value={formData.message}
                       onChange={handleChange}
                       required

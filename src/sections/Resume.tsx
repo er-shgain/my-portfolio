@@ -9,7 +9,6 @@ import {
   SafetyCertificateOutlined,
   CheckOutlined,
   ArrowRightOutlined,
-  IdcardOutlined,
   CloudServerOutlined,
 } from '@ant-design/icons';
 import { experiences, educations, personalInfo } from '../data/portfolioData';
@@ -108,11 +107,6 @@ export const ResumeSection: React.FC = () => {
                           <span className="flex items-center gap-1 text-slate-300">
                             <EnvironmentOutlined className="text-slate-500" />
                             Bengaluru, Electronic City (Remote)
-                          </span>
-                          <span>•</span>
-                          <span className="flex items-center gap-1 text-slate-400">
-                            <IdcardOutlined className="text-indigo-400" />
-                            EMP: TS0542
                           </span>
                         </div>
 

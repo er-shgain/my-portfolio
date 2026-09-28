@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GithubOutlined, ArrowRightOutlined } from '@ant-design/icons';
-import type{ ProjectItem } from '../types';
+import { LockOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import type { ProjectItem } from '../types';
 
 interface ProjectCardProps {
   item: ProjectItem;
@@ -65,14 +65,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ item }) => {
 
       {/* Action Footer */}
       <div className="flex items-center justify-between pt-3 border-t border-white/5 text-xs font-mono">
-        <a
-          href={item.githubUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors"
+        {/* Replaced GitHub button with Private Repository indicator */}
+        <span
+          className="text-slate-500 flex items-center gap-1.5 cursor-default select-none"
+          title="Proprietary code - source is private"
         >
-          <GithubOutlined className="text-sm" /> Source Code
-        </a>
+          <LockOutlined className="text-xs text-amber-400/80" /> Private Source
+        </span>
 
         {item.liveUrl && (
           <a

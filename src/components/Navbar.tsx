@@ -25,11 +25,18 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const phoneNumber = '1234567890'
+  const message = 'Hi! I saw your portfolio and would like to connect.'
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${scrolled
-          ? 'bg-[#070913]/90 backdrop-blur-md border-indigo-500/10 py-3.5 shadow-lg shadow-black/40'
-          : 'bg-transparent border-transparent py-5'
+        ? 'bg-[#070913]/90 backdrop-blur-md border-indigo-500/10 py-3.5 shadow-lg shadow-black/40'
+        : 'bg-transparent border-transparent py-5'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -59,7 +66,9 @@ export const Navbar: React.FC = () => {
         {/* Action Button */}
         <div className="hidden md:flex items-center">
           <a
-            href="#contact"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 shadow-md shadow-indigo-500/20 transition-all"
           >
             Hire Me

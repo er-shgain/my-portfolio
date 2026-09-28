@@ -46,26 +46,6 @@ export const HomeSection: React.FC = () => {
         {/* Left Column: Dossier, Headlines & CTAs */}
         <div className="lg:col-span-7 flex flex-col items-start">
 
-          {/* Status Badges */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex flex-wrap items-center gap-2 mb-6"
-          >
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-semibold">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
-              </span>
-              Full Stack Engineer • Techsunset (Bengaluru / Remote)
-            </span>
-
-            <span className="px-3 py-1.5 rounded-full bg-indigo-950/60 border border-indigo-500/30 text-indigo-300 text-xs font-mono font-semibold">
-              Immediate Joiner
-            </span>
-          </motion.div>
-
           {/* Profile Headshot & Quick Info Strip */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
